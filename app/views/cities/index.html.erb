@@ -1,0 +1,9 @@
+<h1>Cities#index</h1>
+<%= gmaps4rails(@json) %>
+<script type="text/javascript">
+$(document).ready(function() {
+Gmaps.map.callback = function() {
+console.log(Gmaps.map.markers)
+}
+});
+</script>
