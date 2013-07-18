@@ -1,9 +1,13 @@
 <h1>Cities#index</h1>
 <%= gmaps4rails(@json) %>
+<div id="population-range"></div>
+<input type="text" id="filtered-population" />
 <script type="text/javascript">
 $(function() {
-Gmaps.map.callback = function() {
-console.log(Gmaps.map.markers)
-}
+	Gmaps.map.callback = function() {
+//		_.each(Gmaps.map.markers, function(marker) {
+//			Gmaps.map.showMarker(marker)
+//		})
+	}
 });
 </script>

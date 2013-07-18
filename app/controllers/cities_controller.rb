@@ -6,7 +6,7 @@ class CitiesController < ApplicationController
   		marker.title "#{city.name}"
   		marker.json({ :population => city.population })
     	marker.picture({
-    		:picture => "http://icons.iconarchive.com/icons/designbolts/3d-social/128/Facebook-icon.png",
+    		#:picture => "http://icons.iconarchive.com/icons/designbolts/3d-social/128/Facebook-icon.png",
             :width => 32,
             :height => 32})
   	end
